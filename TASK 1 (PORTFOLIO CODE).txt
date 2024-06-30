@@ -1,0 +1,379 @@
+portfolio.html
+---------------------
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="portfolios.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-lOiWZ5FSkGS75KQEdXQ0EsB/+2UyFScv2TP+UyFV1sXLoNf/7F5B+OpQuIWg8AV9kKAVx0PTarLiOMr5N23TLA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+
+</head>
+<body>
+    <header id="header" style="background-color: #333;">
+        <div class="header-content container">
+            <img src="PORTFOLPIC.jpg" alt="Your Name">
+            <div class="header-info">
+                <h1 style="color: #fff;">RAJA PRATHISHA S</h1>
+                <p style="color: yellow;">Web Developer & Designer</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="section" style="background-color:yellowgreen;">
+        <div class="section-content container">
+            <h2 style="color:black;">About Me</h2>
+            <div class="about-info">
+                <img src="PORTFOLPIC.jpg" alt="Your Name">
+                <div class="bio">
+                    <p style="color:navy;">
+                         Hello, I’m Raja Prathisha, a motivated web developer and designer. With a solid foundation in HTML, CSS, and JavaScript, I specialize in creating user-friendly websites that blend functionality with aesthetics. My passion for crafting seamless digital experiences drives me to continuously learn and innovate. I’m excited to collaborate on projects that challenge and inspire, so let’s connect and discuss how I can contribute to your next web development endeavor.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section" style="background-color: #9c27b0;">
+        <div class="section-content container">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <div class="skill">
+                    <p>HTML,CSS,JS</p>
+                    <div class="progress mb-4" style="height:25px;">
+  <div class=" progress-bar progress-bar-striped bg-success progress-bar-animated pl-2" role="progressbar" style="width:80%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">80%</div></div>
+                <div class="skill">
+                    <p>PYTHON,JAVA,C++</p>
+                       <div class=" progress-bar progress-bar-striped bg-info progress-bar-animated pl-2" role="progressbar" style="width: 70%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">70%</div>
+</div> 
+                <div class="skill">
+                    <p>SQL,ANGULAR</p>
+ <div class="progress mb-4" style="height:25px;">
+  <div class=" progress-bar progress-bar-striped bg-warning progress-bar-animated pl-2" role="progressbar" style="width: 60%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">60%</div>
+</div>  
+                <!-- Add more skills as needed -->
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section" style="background-color: #e91e63;">
+        <div class="section-content container">
+            <h2>Projects</h2>
+            <div class="projects-list">
+                <div class="project">
+                    <img src=" project1port.png" alt="Project 1">
+                    <div class="project-info">
+                        <h3>Web developer Portfolio</h3>
+                        <p style="color:gray;"> "My Web Developer Portfolio" is my first project in web development, showcasing my skills and projects. It features a modern design with HTML, CSS, and JavaScript, highlighting my background, projects, and contact details. The site aims to demonstrate my capabilities and passion for creating engaging digital experiences</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="project2port.png" alt="Project 2">
+                    <div class="project-info">
+                        <h3>Product Launch Page</h3>
+                        <p style="color:gray;">"My Product Launch Page" is my second web development project, designed to introduce and promote a new product. This responsive landing page features a clean design with HTML, CSS, and JavaScript, focusing on highlighting key product features and encouraging user engagement through clear calls-to-action.</p>
+                    </div>
+                </div>
+                <!-- Add more projects as needed -->
+            </div>
+        </div>
+    </section>
+
+    <section id="resume" class="section" style="background-color: #ffc107;">
+        <div class="section-content container">
+            <h2 style="color:black;">Resume</h2>
+            <p>Download my <a href="file:///C:/Users/SAKTHIVEL%20M/Documents/HTML/myresume.html#" target="_blank" style="color: #333;">Resume (PDF)</a></p>
+        </div>
+    </section>
+
+    <section id="certificates" class="section" style="background-color: #4caf50;">
+        <div class="section-content container">
+             <h2 style="color:black;">Certificates</h2>
+            <div class="certificates-list">
+                <div class="certificate">
+                    <img src="c1.jpg" alt="Certificate 1">
+                </div>
+                <div class="certificate">
+                    <img src="c2.jpg" alt="Certificate 2">
+                </div>
+                 <div class="certificate">
+                    <img src="c3.jpg" alt="Certificate 1">
+                </div>
+                <div class="certificate">
+                    <img src="c4.jpg" alt="Certificate 2">
+                </div>
+                 <div class="certificate">
+                    <img src="c5.jpg" alt="Certificate 1">
+                </div>
+                <div class="certificate">
+                    <img src="c6.jpg" alt="Certificate 2">
+                </div>
+                 <div class="certificate">
+                    <img src="c7.jpg" alt="Certificate 1">
+                </div>
+                <div class="certificate">
+                    <img src="c8.jpg" alt="Certificate 2">
+                </div>
+                 <div class="certificate">
+                    <img src="c9.jpg" alt="Certificate 2">
+                </div>
+                <!-- Add more certificates as needed -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section" style="background-color: #673ab7;">
+        <div class="section-content container">
+            <h2 style="color:black;">Contact</h2>
+            <ul class="contact-info">
+
+                <li><i class="fas fa-envelope" style="color: #fff;"></i> <a href="mailto:youremail@example.com" style="color: #fff;">prathishasaravanan96@gmail.com</a></li>
+                <li><i class="fas fa-phone" style="color: #fff;"></i> +91 9633378985</li>
+                <li><i class="fab fa-github" style="color: #fff;"></i> <a href="https://github.com/Rajaprathisha" target="_blank" style="color: #fff;">GitHub</a></li>
+                <li><i class="fab fa-linkedin" style="color: #fff;"></i> <a href="https://www.linkedin.com/in/raja-prathisha-s-531756282?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" style="color: #fff;">LinkedIn</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer style="background-color: black; color: #fff;">
+        <div class="container">
+            <p>&copy; 2024 S.RAJA PRATHISHA. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+portfolios.css
+-------------------
+
+ /* Reset and base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header styles */
+#header {
+    color: #fff;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-content img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.header-info h1 {
+    margin: 0;
+}
+
+.header-info p {
+    margin-top: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffc107;
+}
+
+/* Section styles */
+.section {
+    padding: 80px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.section-content {
+    text-align: left;
+}
+
+.section-content h2 {
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.about-info {
+    display: flex;
+    align-items: center;
+}
+
+.about-info img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 40px;
+}
+
+.bio p {
+    margin-bottom: 20px;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skill {
+    width: 200px;
+    margin: 20px;
+}
+
+.skill p {
+    margin: 5px 0;
+}
+
+.skill-bar {
+    height: 8px;
+}
+
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0;
+}
+
+.project-info {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.project-info h3 {
+    font-weight: bold;
+    color:black;
+    margin-bottom: 10px;
+}
+
+ .certificates-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.certificate {
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.certificate:hover {
+    transform: translateY(-5px);
+}
+
+.certificate img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.contact-info {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-info li {
+    margin: 10px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info li i {
+    margin-right: 10px;
+}
+
+.contact-info li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info li a:hover {
+    color: yellow;
+}
+
+/* Footer styles */
+footer {
+
+    text-align: center;
+    padding: 10px 0;
+}
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+

@@ -1,0 +1,178 @@
+CODSOFT TASK 3 (Calculator code)
+==============================
+
+calculator.html
+---------------------------------------------------
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display" id="display">0</div>
+        <button class="btn clear" onclick="clearDisplay()">C</button>
+        <button class="btn backspace" onclick="backspace()">←</button>
+         <button class="btn number" onclick="appendToDisplay('.')">.</button>
+         <button class="btn operator" onclick="appendToDisplay('+')">+</button>
+           <button class="btn number" onclick="appendToDisplay('1')">1</button>
+          <button class="btn number" onclick="appendToDisplay('2')">2</button>
+           <button class="btn number" onclick="appendToDisplay('3')">3</button>
+           <button class="btn operator" onclick="appendToDisplay('-')">-</button>
+           <button class="btn number" onclick="appendToDisplay('4')">4</button>
+           <button class="btn number" onclick="appendToDisplay('5')">5</button>
+            <button class="btn number" onclick="appendToDisplay('6')">6</button>
+            <button class="btn operator" onclick="appendToDisplay('*')">*</button>
+        <button class="btn number" onclick="appendToDisplay('7')">7</button>
+        <button class="btn number" onclick="appendToDisplay('8')">8</button>
+        <button class="btn number" onclick="appendToDisplay('9')">9</button>
+        <button class="btn operator" onclick="appendToDisplay('/')">/</button>
+        <button class="btn number zero" onclick="appendToDisplay('0')">0</button>
+       <button class="btn equal" onclick="calculate()">=</button>
+    </div>
+<script src="cal.js"></script>
+</body>
+</html>
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+calc.css
+---------------------
+
+ body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.calculator {
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.display {
+    grid-column: span 4;
+    text-align: right;
+    background-color: #f3f3f3;
+    padding: 10px;
+    font-size: 1.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    padding: 15px;
+    font-size: 1.2em;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+}
+
+.btn:hover {
+    background-color: #d3d3d3;
+}
+
+.equal {
+    grid-column: span 2;
+    background-color: #007bff;
+    color: #fff;
+}
+
+.equal:hover {
+    background-color: #0056b3;
+}
+
+.clear {
+    background-color: #f44336; /* Red color for clear button */
+    color: #fff;
+}
+
+.operator {
+    background-color: #ff9800; /* Orange color for operator buttons */
+    color: #fff;
+}
+
+.number {
+    background-color: #4caf50; /* Green color for number buttons */
+    color: #fff;
+}
+
+.zero {
+    grid-column: span 2; /* Make the zero button span two columns */
+}
+
+.backspace {
+    background-color: #e91e63; /* Pink color for backspace button */
+    color: #fff;
+}
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+cal.js
+----------------------------
+
+ let display = document.getElementById('display');
+let currentInput = '0';
+let operator = '';
+let firstOperand = '';
+let secondOperand = '';
+let result = '';
+
+function appendToDisplay(value) {
+    if (currentInput === '0') {
+        currentInput = value;
+    } else {
+        currentInput += value;
+    }
+    display.textContent = currentInput;
+}
+
+function clearDisplay() {
+    currentInput = '0';
+    display.textContent = currentInput;
+}
+
+function backspace() {
+    currentInput = currentInput.slice(0, -1); // Remove the last character
+    if (currentInput === '') {
+        currentInput = '0'; // If display is empty, set it to '0'
+    }
+    display.textContent = currentInput;
+}
+
+function calculate() {
+    let expression = currentInput;
+
+    // Handling division by zero
+    if (expression.includes('/0')) {
+        display.textContent = 'Error';
+        return;
+    }
+
+    // Evaluating the expression
+    try {
+        result = eval(expression);
+        display.textContent = result;
+        currentInput = result.toString(); // Update current input with result
+    } catch (error) {
+        display.textContent = 'Error';
+    }
+}
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------

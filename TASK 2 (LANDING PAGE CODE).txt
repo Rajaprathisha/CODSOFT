@@ -1,0 +1,394 @@
+CODSOFT TASK 2 (Landing page code)
+==============================
+
+landpage.html
+-----------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Spots - Tour Tickets Booking & Trip Packages</title>
+    <link rel="stylesheet" href="landpages.css">
+</head>
+<body>
+    <header>
+         <div class="header-content container">
+            <img src="travellogo.png" alt="Your Name">
+            
+        <div class="header-info">
+                <h1 style="color:yellow;">TRAVEL SPOTS</h1></div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#guides">Travel Guides</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+<section class="hero">
+        <div class="background-image"></div>
+        <div class="hero-content">
+            <h1 style="color: black;">Welcome to Travel Spots</h1>
+            <p style="color:red;">Explore our exclusive tour packages and book your tickets today!</p>
+            <a href="#services" class="btn">Discover More</a>
+        </div>
+    </section>
+    <section id="about" class="section" style="background-color:bisque;">
+        <h2>About Us</h2>
+        <div class="container">
+            <div class="about-content">
+                <p>Welcome to Travel Spots, your ultimate destination for unforgettable travel experiences. Whether you're looking to book tickets or explore our diverse trip packages, we're here to make your journey seamless and enjoyable.</p>
+                <p>Explore our site to find out more about our services and start planning your next adventure today!</p>
+            </div>
+            <div class="about-images">
+                <!-- Add travel-related images here -->
+                <img src="travel1.jpg" alt="Image 1">
+                <img src="travel2.jpg" alt="Image 2">
+                <!-- Add more images as needed -->
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section" style="background-color:yellowgreen;">
+        <h2>Our Services</h2>
+        <div class="container">
+            <div class="service">
+                <h3>Tour Tickets Booking</h3>
+                <p>Book tickets to popular destinations around the world.</p>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+            <div class="service">
+                <h3>Trip Packages</h3>
+                <p>Explore our curated trip packages tailored for every traveler.</p>
+                <a href="#" class="btn">Explore Packages</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="guides" class="section" style="background-color:cyan;">
+        <h2>Travel Guides</h2>
+        <div class="container">
+            <div class="guide">
+                <h3>Guide to India</h3>
+                <p>Discover the best places to visit, days to spend, and estimated expenses.</p>
+                <a href="#" class="btn">Visit</a>
+            </div>
+            <div class="guide">
+                <h3>Guide to Abroad</h3>
+                <p>Plan your trip with detailed information on attractions, accommodations, and more.</p>
+                 <a href="#" class="btn">Visit</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section" style="background-color:blanchedalmond;">
+        <h2>Contact Us</h2>
+        <div class="container">
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Travel Spots. All rights reserved.</p>
+        </div>
+    </footer>
+ 
+</body>
+</html>
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+landpages.css
+--------------------
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-content img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.header-info h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+header nav ul li a:hover {
+    background-color:grey ;
+}
+/* Hero section styles */
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    background-image: url('t1.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.hero-content {
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+.hero .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Section styles */
+.section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* About section styles */
+#about {
+    background-color: #f9f9f9;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.about-images {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.about-images img {
+    width: 200px;
+    height: 200px;
+    margin: 0 10px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* Services section styles */
+#services {
+    background-color: #fff;
+}
+
+.service {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+}
+
+.service h3 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.service .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.service .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Guides section styles */
+#guides {
+    background-color: #f9f9f9;
+}
+
+.guide {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.guide:hover {
+    transform: translateY(-5px);
+}
+
+.guide h3 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.guide p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.guide.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.guide.btn:hover {
+    background-color: #0056b3;
+}
+
+
+/* Contact section styles */
+#contact {
+    background-color: #fff;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    clear: both;
+    margin-top: 20px;
+}
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
